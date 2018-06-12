@@ -22,7 +22,7 @@ import org.springframework.util.SerializationUtils;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * @author Dave Syer
+ * @author Anand Singh
  *
  */
 public class VetTests {
@@ -31,6 +31,7 @@ public class VetTests {
     public void testSerialization() {
         Vet vet = new Vet();
         vet.setFirstName("Zaphod");
+        // vet.setLastName("Beeblebrox");
         vet.setLastName("Beeblebrox");
         vet.setId(123);
         Vet other = (Vet) SerializationUtils
